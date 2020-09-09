@@ -644,7 +644,7 @@ header {
 }
 
 .info3_slogan {
-  background-image: url(student-week1/lg-想吃甜點是不需要理由的.svg);
+  background-image: url("../../student-week1/lg-想吃甜點是不需要理由的.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -675,13 +675,13 @@ header {
 }
 
 .title1 {
-  background-image: url(student-week1/lg-為什麼選擇了做甜點.svg);
+  background-image: url("../../student-week1/lg-為什麼選擇了做甜點.svg");
   -webkit-transform: translateY(-77px);
           transform: translateY(-77px);
 }
 
 .title2 {
-  background-image: url(student-week1/lg-為什麼一定要吃甜點.svg);
+  background-image: url("../../student-week1/lg-為什麼一定要吃甜點.svg");
   -webkit-transform: translateY(-77px);
           transform: translateY(-77px);
   margin-right: 42px;
@@ -821,14 +821,14 @@ header {
     width: 100%;
   }
   .rwd_title1 {
-    background-image: url(student-week1/sm-橫式-為什麼選擇了做甜點.svg);
+    background-image: url("../../student-week1/sm-橫式-為什麼選擇了做甜點.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 60px;
   }
   .rwd_title2 {
-    background-image: url(student-week1/sm-橫式-為什麼一定要吃甜點.svg);
+    background-image: url("../../student-week1/sm-橫式-為什麼一定要吃甜點.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -838,7 +838,7 @@ header {
     margin-bottom: 0;
   }
   .rwd_title3 {
-    background-image: url("../student-week1/sm-橫式-想吃甜點是不需要理由的.svg");
+    background-image: url("../../student-week1/sm-橫式-想吃甜點是不需要理由的.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
