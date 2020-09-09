@@ -1,0 +1,324 @@
+textarea:focus, input:focus, button:focus{
+  outline: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'PingFang TC','semibold';
+  .menu_list {
+    display: none;
+  }
+  .logo_desk {
+    
+    a {
+      background: url(./student-week1/logo-all-dark.svg) no-repeat 50% 50%;
+      display: block;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 219px;
+      height: 100px;
+    }
+  }
+  .logo_rwd {
+    display: none;
+    margin-left: 10px;
+    a {
+      background: url(./student-week1/logotype-sm-dark.svg) no-repeat 50% 50%;
+      display: block;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 114px;
+      height: 80px;
+    }
+  }
+  .nav_container {
+    display: flex;
+    align-items: center;
+    .nav{
+      display: flex;
+      a {  
+        display: block;
+        line-height: 80px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-weight: 500;
+        color: $main_color;
+        &:hover {
+          color: #fff;
+          background-color: $main_color;
+        }
+      }
+    }
+    .cart_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 44px;
+      padding-right: 44px;
+      text-align: center;
+      color: $main_color;
+      height: 80px;
+      font-size: 18px;
+      &:hover{
+        background-color: $main_color;
+        color: #FFF;
+      }
+    }
+  } 
+}
+// .footer_mail_container{
+//   width: 100%;
+//   background-color: $main_color;
+// }
+// .footer_container {
+//   width: 100%;
+//   background-color: $sub_color;
+// }
+.footer_mail {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 30px 122px;
+  background-color: $main_color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .footer_title {
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+    h5 {
+      color: $sub_color;
+      font-weight: 300;
+      font-size: 24px;
+      font-family: 'Helvetica Neue','Ragular';
+    }
+  }
+  .mail {
+    position: relative;
+    font-size: 0px;
+    width: 380px;
+    height: 56px;
+    .mail_pic {
+      /*icon*/
+      position: absolute;
+      top: 16px;
+      left: 20px;
+    }
+    input {
+      background-color: $sub_color;
+      padding: 0;
+      margin: 0;
+      border: none;
+      box-sizing: border-box;
+      padding-left: 60px;
+      font-size: 18px;
+      height: 100%;
+      width: 316px;
+      color: $main_color;
+    }
+    button {
+      margin: 0;
+      padding: 0;
+      border: none;
+      background-color: $color_yellow;
+      width: 64px;
+      height: 100%;
+    }
+    .submit:hover {
+      background-color: darken($color_yellow, 10%);
+      cursor: pointer;
+    }
+    .submit:focus {
+        outline: none;
+    }
+  }
+}
+.footer_mail_container {
+  background-color: $main_color;
+}
+.footer_container {
+  background-color: $sub_color;
+}
+.footer_layout {
+  max-width: 940px;
+  margin: 0 auto;
+  height: 341px;
+  display: flex;
+  background-color: $sub_color;
+  justify-content: space-between;
+  padding-left: 122px;
+  padding-right: 122px;
+  .logo {
+    width: 55%;
+    padding-top: 38px;
+    padding-bottom: 115px;
+  }
+  .info {
+    line-height: 1.5;
+    color: $main_color;
+    margin-bottom: 20px;
+  }
+  .icon {
+    display: flex;
+    img {
+      display: block;
+      width: 32px;
+      margin-right: 8px;
+    }
+    .ic-line:hover,
+    .ic-facebook:hover {
+      transform: translateY(-5px);
+      cursor: pointer;
+      box-shadow: 0px 5px 5px 0px rgba(black, 0.2);
+    }
+  }
+
+  .footer_slogan {
+    display: flex;
+    flex-direction: column;
+    font-family: serif;
+    justify-content: space-between;
+    align-items: flex-end;
+    img {
+      width: 60px;
+      height: 219px;
+      margin-top: 30px;
+      position: relative;
+    }
+    .cop {
+      font-family: Times;
+      margin-bottom: 30px;
+      letter-spacing: 0.5px;
+      color: $main_color;
+    }
+  }
+}
+
+// 1023px 
+
+@media screen and (max-width: 1023px) {
+  footer {
+    .footer_mail {
+      display: block;
+      padding: 30px 60px;
+      .footer_title {
+        margin-bottom: 20px;
+      }
+      .mail {
+        width: 100%;
+        input {
+          width: 90%;
+        }
+        button {
+          width: 10%;
+        }
+      }
+    }
+    .footer_layout {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+// 767px
+
+@media screen and (max-width: 767px) {
+  header {
+    .nav_container {
+      .cart_icon {
+        padding-left: 36px;
+        padding-right: 38px;
+      }
+    }
+    
+    a{
+      height: 80px;
+    }
+    .menu_list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      text-align: center;
+      color: $main_color;
+      height: 80px;
+      font-size: 18px;
+      &:hover{
+      background-color: $main_color;
+      color: #FFF;
+      }
+    }
+    .menu_list:hover{
+      color: #FFF;
+      background-color: $main_color;
+    }
+    .logo_desk {
+      display: none;
+    }
+    .logo_rwd {
+      display: block;
+    }
+    .dis_n {
+      display: none;
+    }
+    .nav{
+      margin-right: 0;
+    }
+  }
+  footer {
+    .footer_mail {
+      display: block;
+      padding: 30px 30px;
+      .footer_title {
+        margin-bottom: 20px;
+      }
+      .mail {
+        width: 100%;
+        input {
+          width: 80%;
+        }
+        button {
+          width: 18%;
+        }
+      }
+    }
+    .footer_layout {
+      display: block;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: auto;
+      .logo {
+        padding-bottom: 28px;
+      }
+      .icon {
+        margin-bottom: 30px;
+      }
+      .footer_slogan {
+        display: block;
+        img {
+          display: none;
+        }
+        .cop {
+          margin: 0;
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+  textarea:focus, input:focus{
+    outline: none;
+  }
+}
+

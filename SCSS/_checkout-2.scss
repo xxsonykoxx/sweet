@@ -1,0 +1,111 @@
+.pay_content {
+  flex: 3;
+}
+.pay_content {  
+  color: $sub_color;
+  margin-right: 18px;
+  background-color: $main_color;
+}
+.pay_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+  h3 {
+    font-size: 36px;
+    color: $sub_color;
+  }
+}
+.pay_content {
+  input,select {
+    background-color: $sub_color;
+    border: none;
+    height: 56px;
+    margin-bottom: 16px;
+    padding: 17px 20px;
+    color: $text_color;
+    font-weight: 300;
+    font-size: 16px;
+  }
+  input::placeholder {
+    color: $text_color;
+    font-size: 16px;
+  }
+  form {
+    width: 100%;
+    p{
+      margin-bottom: 10px;
+    }
+    padding: 14px 40px;
+    padding-top: 0px;
+  }
+}
+.crdeit_card {
+  width: 100%;
+  .card_input {
+    width: 100%;
+  }
+}
+.card_owner {
+  width: 100%;
+  .owner_firstname {
+    width: 49%;
+    margin-right: 2%;
+  }
+  .owner_lastname{
+    width: 49%;
+  }
+}
+.expiration_data {
+  width: 100%;
+  .month {
+    width: 49%;
+    margin-right: 0.5%;
+  }
+  .years{
+    width: 49%;
+  }
+}
+.security_code {
+  width: 100%;
+  .security_code_input {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 733px) {
+  .pay_content {
+    margin-right: 0;
+  }
+  .expiration_data {
+    width: 100%;
+    .month {
+      width: 49%;
+      margin-right: 0.8%;
+    }
+    .years{
+      width: 49%;
+    }
+  }
+}
+@media screen and (max-width: 431px) {
+  .card_owner {
+    width: 100%;
+    .owner_firstname {
+      width: 48.5%;
+      margin-right: 1.5%;
+    }
+    .owner_lastname{
+      width: 49%;
+    }
+  }
+  .expiration_data {
+    width: 100%;
+    .month {
+      width: 48%;
+      margin-right: 0;
+    }
+    .years{
+      width: 49%;
+    }
+  }
+}

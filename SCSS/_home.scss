@@ -1,0 +1,351 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.home_container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* -------------- banner -------------- */
+.home_banner {
+  background-image: url("https://bit.ly/2OhbMHr");
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  max-width:940px;
+  height: 496px;
+}
+
+/* --------- 跟banner疊的MENU --------- */
+.home_content {
+  position: relative;
+  top: -82px;
+  max-width: 774px;
+  margin: 0 auto;
+  // margin-bottom: 164px;
+}
+.home_menu {
+  width: 100%;
+  display: flex;
+  a {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 256px;
+    cursor: pointer;
+    transition: 0.3s all;
+    writing-mode: vertical-rl;
+    overflow: hidden;
+  }
+}
+.homeMenu_li {
+  width: 33.3333%;
+  height: 256px;
+  
+  .homeMenu_bgc_li {
+    filter: blur(5px);
+  }
+  .homeMenu_mask_li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    
+  }
+  .homeMenu_text_li{
+    font-size: 24px;
+    letter-spacing: 0.5rem;
+  }
+  // 本日精選 
+  .todays_bgc {
+    background-image: url("https://bit.ly/2R5tqwD");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+
+  }
+  .todays_mask { 
+    background-color: $color_yellow;
+  }
+  .todays_text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: $main_color;
+  }
+  
+
+  // 人氣推薦
+  .popular_bgc {
+    background-image: url("https://bit.ly/2Dwoxd7");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .popular_mask {
+    background-color: $main_color;
+  }
+  .popular_text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #FFF;
+  }
+
+  // 新品上市
+  .newproducts_bgc {
+    background-image: url("https://bit.ly/2OUteif");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .newproducts_mask {
+    background-color: $main_color;
+  }
+  .newproducts_text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    color: #FFF;
+  }
+}
+/*---------- hover -----------*/
+.home_menu a:hover{
+  .homeMenu_bgc_li {
+    filter: blur(0);
+  }
+}
+
+/*------------ INFO ------------*/
+.home_info_full_screen {
+  width: 100%;
+  background-color: $sub_color;
+}
+.sweets_info {
+  width: 1024px;
+  margin: 0 auto;
+  height: 420px;
+  display: flex;
+}
+
+.info1,.info2 {
+  background-color: $sub_color;
+  margin-bottom: 105px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+.info2 {
+  justify-content: start;
+  margin-bottom: 95px;
+}
+.info3 {
+  height: 330px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 75px;
+}
+.info3_slogan {
+  background-image: url(./student-week1/lg-想吃甜點是不需要理由的.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 89px;
+  height: 328px;
+}
+
+.info_photo {
+  width: 460px;
+  height: 460px;
+  background-size: cover;
+  background-position: center;
+}
+.photo1 {
+  background-image: url('https://bit.ly/2xPn7Eq');
+}
+.photo2 {
+  background-image: url('https://bit.ly/2zzAQS4');
+}
+
+.info_title {
+  background-repeat: no-repeat;
+  height: 307px;
+  width: 89px;
+  top: -17px;
+}
+.title1 {
+  background-image: url(./student-week1/lg-為什麼選擇了做甜點.svg);
+  transform: translateY(-77px);
+}
+.title2 {
+  background-image: url(./student-week1/lg-為什麼一定要吃甜點.svg);
+  transform: translateY(-77px);
+  margin-right: 42px;
+  margin-left: 60px;
+}
+.text_group {
+  height: 279px;
+  display: flex;
+  flex-direction: row-reverse;
+  .chapter2,.chapter4 {
+    margin-right: 40px;
+  }
+}
+.info_text {
+  color: #8DA291;
+  font-family: 'PingFang TC';
+  font-weight: 300;
+  writing-mode: vertical-rl;
+  line-height: 2.4;
+}
+
+/* -------------- 產品 -------------- */
+.products2 {
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 40px;
+  li {
+    margin-left: 0;
+  }
+  .center_product {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1023px){
+  .sweets_info {
+    max-width: 940px;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  header {
+    .logo_desk {
+      padding-left: 10px;
+    }
+  }
+  .home_container{
+    max-width:939px;
+    margin-bottom: -52px;
+  }
+  .home_info_full_screen {
+    background-color: transparent;
+  }
+  .sweets_info {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .info1,.info2 {
+    background-color: transparent;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .info_photo {
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+  }
+  .photo1 {
+    transform:translateY(-330px);
+  }
+  .text_group {
+    display: block;
+    background-color: $sub_color;
+    padding: 30px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .chapter2,.chapter4 {
+    margin-top: 20px;
+    margin-right: 0 !important;
+  }
+  .info_text {
+    color: #8DA291;
+    font-family: 'PingFang TC';
+    font-weight: 300;
+    writing-mode: initial;
+    line-height: 2.4;
+    width: 100%;
+  }
+  .group1 {
+    transform:translateY(330px);
+  }
+  .info_title,.title2,.title1,.info3_slogan {
+    display: none;
+  }
+  .rwd_displaynone {
+    display: none;
+  }
+  .rwd_info_title {
+    height: 60px;
+    width: 100%;
+  }
+  .rwd_title1 {
+    background-image: url(./student-week1/sm-橫式-為什麼選擇了做甜點.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 60px;
+  }
+  .rwd_title2 {
+    background-image: url(./student-week1/sm-橫式-為什麼一定要吃甜點.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+  .info3 {
+    margin-bottom: 0;
+  }
+  .rwd_title3 {
+    background-image: url(./student-week1/sm-橫式-想吃甜點是不需要理由的.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .footer_mail .footer_title h5 {
+    font-size: 20px !important;
+  }
+}

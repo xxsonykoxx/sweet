@@ -1,0 +1,126 @@
+// header_layout
+$color_yellow: #ffe180;
+$color_main: #3f5d45;
+
+.payment_success_banner {
+  width: 100%;
+  height: 460px;
+  background-image: url("https://bit.ly/2P7GhNd");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 60px;
+}
+.center_content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .check_success_icon {
+    position: relative;
+    margin-bottom: 32px;
+    font-size: 20px;
+    color: $color_main;
+    .cir2 {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+    .check_border_r {
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: $color_main;
+      left: 20px;
+      top: 10px;
+    }
+    .check_border_l {
+      position: absolute;
+      width: 68px;
+      height: 2px;
+      background-color: $color_main;
+      right: 20px;
+      top: 10px;
+    }
+  }
+  .success {
+    margin-bottom: 51px;
+    z-index: 1000;
+    height: 45px;
+    width: 189px;
+  }
+  .continue_btn {
+    width: 300px;
+    height: 65px;
+    background-color: $color_yellow;
+    border: none;
+    cursor: pointer;
+    &:hover {
+      background-color: $color_main;
+      a {
+        color: $sub_color;
+      }
+    }
+    a {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      color: $color_main;
+      font-size: 24px;
+      font-family: "PingFang TC", "semibold";
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .payment_success_banner {
+    height: 518px;
+    background-size: cover;
+  }
+  .center_content {
+    position: relative;
+    .check_success_icon {
+      margin: 0;
+    }
+    .success {
+      margin: 0;
+      margin-top: 33px;
+    }
+    .continue_btn {
+      position: absolute;
+      bottom: -60px;
+      width: 100%;
+    }
+  }
+  footer {
+    .mail {
+      .submit {
+        width: 64px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    .footer_mail {
+      .footer_title {
+        h5 {
+          font-size: 21px;
+        }
+      }
+    }
+    .info {
+      h4 {
+        font-size: 14px;
+      }
+    }
+    .footer_slogan {
+      .cop {
+        h2 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

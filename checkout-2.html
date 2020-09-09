@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+  <meta name="dicscription" content="網頁的簡介">
+  <meta name="keyword" content="キーワード">
+  <meta name="author" content="製作人or公司名稱">
+  <meta name="copyright" content="版權">
+  <meta name="format-detection" content="telephone=no">
+  <title>Sweetaste*甜點電商</title>
+  <link rel="stylesheet" href="./dist/css/all.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'/>
+</head>
+
+<body>
+
+  <header>
+    <a class="menu_list">
+      <i class="fas fa-bars"></i>
+    </a>
+
+    <div class="logo_desk">
+      <h1>
+        <a href="/home.html">sweetatste</a>
+      </h1>
+    </div>
+
+    <div class="logo_rwd">
+      <h1>
+        <a href="#">sweetatste</a>
+      </h1>
+    </div>
+
+    <div class="nav_container">
+      <ul class="nav">
+        <li class='dis_n'><a href="/home.html">首頁</a></li>
+        <li class='dis_n'><a href="/product.html">甜點</a></li>
+        <li class='dis_n'><a href="/login.html">登入</a></li>
+      </ul>
+      <a href="/shopping_cart.html" class='cart_icon'><i class="fas fa-shopping-cart"></i></a>
+  </header>
+  <!-- ここからスタート☆ -->
+  <div class="checkout_container">
+    <div class="pay_content">
+      <div class="pay_title">
+        <h3>付款</h3>
+        <div class="checkout_step">
+          <i class="far fa-check-circle"></i>
+          <i class="far fa-dot-circle"></i>
+          <i class="far fa-circle"></i>
+          <div class="step_line1"></div>
+          <div class="step_line2"></div>
+        </div>
+      </div>
+      <form action="" class="payment">
+        <label for="" class="crdeit_card">
+          <p>信用卡卡號</p>
+          <input type="text" class="card_input" placeholder="9012-3456-7890-1234">
+        </label>
+        <label for="" class="card_owner">
+          <p>持卡人姓名</p>
+          <input type="text" class="owner_firstname" placeholder="王"><input type="text" class="owner_lastname" placeholder="小明">
+        </label>
+        <label for="" class="expiration_data">
+          <p>有效期限</p>
+          <select name="month" id="" class="month">
+            <option value="">月&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            <option value="Jan">01</option>
+            <option value="Feb">02</option>
+            <option value="Mar">03</option>
+            <option value="Apr">04</option>
+            <option value="May">05</option>
+            <option value="Jun">06</option>
+            <option value="Jul">07</option>
+          </select>
+          <select name="year" id="" class="years">
+            <option value="">年</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </label>
+        <label for="" class="security_code">
+          <p>背面末三碼</p>
+          <input type="text" class="security_code_input" placeholder="123">
+        </label>
+      </form>
+      <button type="submit" class="next_step_btn"><a href="/checkout-3.html" class="next_page">下一步</a></button>
+    </div>
+
+    <div class="shopping_details">
+      <div class="order_content">
+        <h3 class="order_info_title">訂單摘要</h3>
+
+        <p class="order_subtotal">小計 <span class="order_subtotal_price">NT$ 2,700</span></p>
+
+        <p class="order_shoppingfee">運費 <span class="order_shoppingfee_price">NT$ 300</span></p>
+
+        <p class="order_total">總計 <span class="order_total_price">NT$ 3,000</span></p>
+      </div>
+
+      <ul class="checkout_cart">
+        <h2 class="checkout_cart_title">
+          購物清單
+        </h2>
+
+        <li class="checkout_cart_product_list">
+          <div class="checkout_product">
+            <div class="checkout_cart_photo photo_ccp1"></div>
+            <div class="checkout_product_name">
+              <h3>焦糖馬卡龍（2）<p>NT$ 450</p></h3>
+            </div>
+          </div>
+        </li>
+        <li class="checkout_cart_product_list">
+          <div class="checkout_product">
+            <div class="checkout_cart_photo photo_ccp2"></div>
+            <div class="checkout_product_name">
+              <h3>焦糖馬卡龍（2）<p>NT$ 450</p></h3>
+            </div>
+          </div>
+        </li>
+        <li class="checkout_cart_product_list">
+          <div class="checkout_product">
+            <div class="checkout_cart_photo photo_ccp3"></div>
+            <div class="checkout_product_name">
+              <h3>焦糖馬卡龍（2）<p>NT$ 450</p></h3>
+            </div>
+          </div>
+        </li>
+
+       
+      </ul>
+
+    </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <div class="footer_mail_container">
+      <div class="footer_mail">
+        <div class="footer_title">
+          <img src="student-week1/logo-light.svg" alt="">
+          <h5>訂閱你我的甜蜜郵件</h5>
+        </div>
+
+
+        <div class="mail">
+          <img src="/student-week1/mail-24px.png" alt="" class="mail_pic">
+          <input type="text" placeholder="請輸入您的信箱">
+          <button type="submit" class="submit">
+            <img src="student-week1/arrow_forward-24px.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="footer_container">
+      <div class="footer_layout">
+        <div class="logo_info_icon">
+          <img src="student-week1/logotype-sm-dark.svg" alt="" class="logo">
+          <div class="info">
+            <h4 class="tel">07-1234-5678</h4>
+            <h4 class="mail">sweetaste@email.com</h4>
+            <h4 class="address">800&nbsp;高雄市新興區幸福路 520 號</h4>
+          </div>
+          <div class="icon">
+            <img src="/student-week1/ic-line@.svg" alt="" class="ic-line">
+            <img src="/student-week1/ic-facebook.svg" alt="" class="ic-facebook">
+          </div>
+        </div>
+        <div class="footer_slogan">
+          <img src="/student-week1/sm-今天是個吃甜點的好日子.svg" alt="">
+          <!-- <h4>今天是個——<br>&nbsp;&nbsp;吃甜點的好日子。</h4> -->
+          <div class="cop">
+            <h2>&copy;&nbsp;2018 Sweetaste* All Rights Reserved</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
