@@ -2566,6 +2566,7 @@ header .logo_desk a {
   white-space: nowrap;
   width: 219px;
   height: 100px;
+  font-size: 1px;
 }
 
 header .logo_rwd {
@@ -2581,6 +2582,7 @@ header .logo_rwd a {
   white-space: nowrap;
   width: 114px;
   height: 80px;
+  font-size: 1px;
 }
 
 header .nav_container {
